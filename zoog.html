@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+function setup() {
+  createCanvas(500, 500);
+}
+
+function draw() {
+  background(220);
+  fill('white')
+  strokeWeight(4)
+  rect(135, 230, 130, 130, 50) // BODY
+  fill('black')
+  ellipse (300,70,100,100)// RIGHT EAR
+  ellipse(100,70,100,100) // LEFT EAR  
+  fill('white')
+  stroke('#222222');
+  strokeWeight(4);
+  ellipse (200,150,200,200) // HEAD
+  fill('black')
+  ellipse (150,140,40,80) // LEFT EYE
+  ellipse (250,140,40,80) // RIGHT EYE
+  ellipse (200,200,50,40) // NOSE
+  fill('white')
+  ellipse (150,140,40,70) // WHITE LEFT EYE
+  ellipse (250,140,40,70) // WHITE RIGHT EYE
+  fill('black')
+  strokeWeight(1)
+  text("X", 195,241) // MOUTH
+  textSize(19);
+  fill(0,180,0)
+  ellipse(150,130,20,30) // GREEN LEFT EYE
+  ellipse(250,130,20,30) // GREEN RIGHT EYE
+  fill(255,102,153)
+  ellipse (120,200,55,40) // LEFT PINK CHEEK
+  ellipse (280,200,55,40) // RIGHT PINK CHEEK
+  fill('black')
+  textSize(15);
+text('PANDA', 121, 209); // TEXT
+  point(220, 210); // POINT
+  line(120, 210, 220, 210); // LINE
+
+}
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/DeniaCasimiro/p5js/blob/master/zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
